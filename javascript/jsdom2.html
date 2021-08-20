@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Dom 2</title>
+</head>
+<body>
+    <h3>JS DOM 2</h3>
+    <img id="myImg" src="b4.jpeg" width="200px" height="200px">
+    <script>
+        let myImg= document.getElementById("myImg");
+        myImg.onmouseover = big;
+        myImg.onmouseout = normal;
+
+        function big(){
+            myImg.width = "400";
+            myImg.height = "400";
+        /*    console.log(myImg);
+            console.log(myImg.src);
+            console.log(myImg.getAttribute('src'));
+            myImg.src="b5.jpg" */
+        }
+
+
+        function normal(){
+            myImg.width = "200";
+            myImg.height = "200";
+            changeImg();
+            // console.log('normal');
+        }
+
+        function changeImg(){
+            let src=myImg.getAttribute('src');
+            if(src=='b4.jpeg'){
+                myImg.src = 'b5.jpg';
+            }else if(src=='b5.jpg'){
+                myImg.src = 'b6.jpeg';
+            }else{
+                myImg.src = 'b4.jpeg';
+            }
+        }
+
+    </script>
+</body>
+</html>

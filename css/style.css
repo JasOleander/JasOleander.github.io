@@ -1,0 +1,197 @@
+/* tag or element selector */
+h3{ 
+    /* color: blue; text*/
+    /* color: #0000ff; hex*/
+    /* color: #00f; short hex */
+    /* color: rgb(0,0,255); rgb (color picker in google) */
+    color: rgb(245, 66, 132); 
+    text-align: center;
+    letter-spacing: 5px;
+}
+p{
+    text-indent: 50px;
+    line-height: 40px;
+}
+
+/* e.g selector.html */
+/* universal selector( * => usage for default on webpage ) */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* e.g selector.html */
+/* tag selector or element selector */
+h2,h1{
+    color: rgb(180, 27, 91);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* e.g selector.html */
+/* attribute selectors (title နဲ့ ခွဲရင် ပိုကောင်း)*/
+/* a[target="_blank"]{
+    color: rgb(3, 68, 12);
+    text-decoration: none;
+} */
+
+input[type="text"]{
+    color: tomato;
+}
+
+/* (#) id selector (e.g. idandclass.html) */ 
+#id_selector{
+    color: greenyellow;
+    text-indent: 50px;
+}
+
+/* (.) class selector  */
+.class_selector{
+    color:rgb(127, 47, 255);
+    line-height: 40px;
+    word-spacing: 20px;
+    text-indent: 50px;
+}
+
+/* e.g descendent_child.html */
+/* Descendent selector */
+.descendent_selector a{
+    color:rgb(255, 182, 47);
+}
+
+/* Child selector */
+.child_selector > a{
+    color:green;
+}
+
+/* Pseudo selector (e.g pseudo.html) */
+a:link{
+    color: red;
+}
+
+a:hover{
+    color: green;
+}
+
+a:active{
+    color: blue;
+}
+
+a:visited{
+    color:magenta;
+}
+
+/* Target */
+div:target{
+    border: 1px solid red;
+    color:rgb(127, 47, 255);
+}
+
+/* form (e.g. std_register.html)*/
+form{
+    margin: auto;
+    width: 80%;
+}
+
+input[type="text"],input[type="tel"],input[type="email"]{
+    width: 100%;
+    height: 20px;
+    border: 1px solid #fff;
+    background-color: gray;
+    outline: none;
+}
+
+input[type="text"]:focus,input[type="tel"]:focus,input[type="email"]:focus{
+    border: 3px solid rgb(18, 124, 14);
+}
+
+div#dob_select{
+    width: 90%;
+    /* background-color: pink; */
+}
+
+div#dob_select select{
+    width: 30%;
+    height: 30px;
+    /* background-color: gray; */
+    outline: none;
+    border-radius: 5px;
+}
+
+/* checked and enabled + label (check or click လုပ်မှ effect သက်ရောက်) */
+input[type="radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+
+#address{
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="checkbox"]:enabled + label{
+    color: yellow;
+    font-style: italic;
+}
+
+input[type="checkbox"]:checked + label{
+    color: blue;
+    font-style: normal;
+}
+
+/* fieldset tag (for child tag) */
+fieldset ul li{
+    margin-left: 60px;
+}
+
+li:first-child{
+    background-color: teal;
+}
+
+li:last-child{
+    background-color: tomato;
+}
+
+li:nth-child(3){
+    background-color: turquoise;
+}
+
+li:nth-child(5){
+    background-color: violet;
+}
+
+/* empty paragraph p tag */
+p:empty{
+    width: 100%;
+    height: 20px;
+    background-color: turquoise;
+}
+
+.thank{
+    text-align: center;
+    color: yellow;
+}
+
+input[type="checkbox"]:disabled + label{
+    color:#ddd;   
+}
+
+/* border.html */
+p.border_one{
+    border: 20px dashed red;
+    /* border-style: dashed; */
+}
+
+p.border_two{
+    border-bottom: 3px double rgb(245, 66, 132); /* left,right,top,bottom */
+}
+
+p.border_style{
+    border-style: dotted;
+}
+
+p.mixed_border_style{
+    border-style: dashed dotted double solid; /*top,right,bottom,left*/
+}

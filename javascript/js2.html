@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Operators</title>
+</head>
+<body>
+    <h3>JS Operators</h3>
+    <script>
+        // Unary Operators => work with one variable
+        // ++ , -- , !
+        // ++ increment, -- decrement, ! negation (true => false, false => true)
+        var myNumber = 3;
+        console.log(myNumber++); // (3) increment after operation
+        console.log(myNumber); // output (4)
+
+        console.log(++myNumber); // (5) increment before operation
+        console.log(myNumber--); // (5) decrement after operation
+        console.log(myNumber); // (4) 
+        console.log(--myNumber); // (3) decrement before operation
+
+        var single = true;
+        console.log(!single);
+
+        // Binary Operators => work with 2 or more variables
+        // + , - , * , / , % (modulus), **(exponential)
+        var firstNumber = 12;
+        var secondNumber = 5;
+        var sum = firstNumber + secondNumber;
+        var sub = firstNumber - secondNumber;
+        var mul = firstNumber * secondNumber;
+        var div = firstNumber / secondNumber;
+        var mod = firstNumber % secondNumber;
+        var power = firstNumber ** secondNumber;
+
+        console.log(firstNumber, secondNumber);
+        console.log(sum, sub, mul, div, mod, power);
+
+        // Logical Operators => work with comparisons
+        // > < >= <= == != && ||
+        // if else
+
+        // Ternary Operators => 3 variables
+        // ? : (before ? is condition, after : is result (T or F))
+        var ans=(5%2 == 1)?'ODD':'EVEN';
+        console.log(ans);
+
+    </script>
+</body>
+</html>

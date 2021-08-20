@@ -1,0 +1,8 @@
+folder=> shop => index.html => this is homepage
+                 images =>
+                 pages=> about.html => our shop is ...
+                        products.html =>    table => cell=> 
+                                            image/price/name
+                        contact.html => map => contact form 
+                                            email/name/comment/send button
+HOME | ABOUT | PRODUCTS | CONTACT                                            

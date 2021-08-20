@@ -1,0 +1,13 @@
+How computer works?
+
+1/input
+//code for input
+//memory allocation => variable / constant
+//RAM/HDD/CPU
+
+2/process 
+//RAM to CPU => ALU/CU => result to RAM 
+//DB
+3/output
+//show result to usuer =>
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Operation Swap C2F MtoKilo</title>
+</head>
+<body>
+        <h3>JS Operation Swap C2F MtoKilo</h3>
+        <script>
+            //swap numbers
+        //swap();
+        function swap(){
+            let firstNumber = parseInt(prompt('Enter first Number'));
+        let secondNumber = parseInt(prompt('Enter second Number'));
+        let temp;
+        console.log(`Before Swap ${firstNumber} ${secondNumber}`);
+        temp = firstNumber;
+        firstNumber = secondNumber;
+        secondNumber = temp;
+        console.log(`After Swap ${firstNumber} ${secondNumber}`);        
+        }
+
+        // fahrenheit = celsius * 1.8 + 32
+        //ctof();
+        function ctof(){
+            //1. get input
+        let celsius = parseFloat(prompt('Enter celsius Degree!'));
+
+            //2. calculation
+        let fahrenheit = celsius*1.8 + 32;
+            
+            // 3. show result
+        console.log(`${celsius} Celsius Degree is ${fahrenheit} Fahrenheit Degree`);
+        }
+
+        // 1km = 0.621371 mile
+        // 10km = 6.21371 mile
+            function ktom(){
+                // 1. input 
+            let kilometer=parseInt(prompt('Enter Kilometer'));
+                // 2. calculate
+                let factor = 0.621371;
+            let mile = kilometer*factor;
+            // let kilometer = mile / factor;
+                // 3. show results
+            console.log(`${kilometer}Km is ${mile.toFixed(1)} Miles`);
+            }
+       // ktom();    
+        
+        // mile to kilometer => kilometer = mile /factor
+        mtok();
+        function mtok(){
+            let mile = parseFloat(prompt('Enter mile!'));
+            let factor = 0.621371;
+            let kilometer = mile / factor;
+            console.log(`${mile} Mile is ${kilometer.toFixed(1)}Kilometer`);
+        }
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: gray;">
+    <h2>Student Registration Form</h2>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Ma Ma">  
+        <br><br>
+        <label for="fname">Father Name</label>
+        <input type="text" name="fname" id="fname" placeholder="U Moe">
+        <br><br>
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" placeholder="09-xxxxxxxxx">
+        <!-- <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> -->
+        <br><br>
+        <label for="dob">Date of Birth</label>
+        <div id="dob_select">
+            <select>
+                <option>Day</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <select>
+                <option>Month</option>
+                <option>Jan</option>
+                <option>Feb</option>
+                <option>Mar</option>
+            </select>
+            <select>
+                <option>Year</option>
+                <option>1990</option>
+                <option>1991</option>
+                <option>1992</option>
+            </select>
+        </div>
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="example@gmail.com">
+        <br><br>
+        <label for="gender">Gender</label><br>
+        <input type="radio" name="gender" id="Male">
+        <label>Male</label>
+        <input type="radio" name="gender" id="Female">
+        <label>Female</label>
+        <br><br>
+        <label for="address">Address</label>
+        <textarea id="address"></textarea>
+        <br><br>
+        <label for="">Qualification</label>
+        <div>
+            <input type="checkbox" name="elementary" id="elementary" disabled>
+            <label for="elementary">Elementary School</label>
+        </div>
+        <div>
+            <input type="checkbox" name="middle" id="middle">
+            <label for="middle">Middle School</label>
+        </div>
+        <div>
+            <!-- <label for="high">High School</label> -->
+            <input type="checkbox" name="high" id="high">
+            <label for="high">High School</label>
+        </div>
+        <div>
+            <input type="checkbox" name="graduate" id="graduate">
+            <label for="graduate">Graduation</label>
+        </div>
+        <br><br>
+        <fieldset class="fieldset">
+            <legend>Rules</legend>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus repudiandae iure sed soluta doloremque maiores deleniti labore, quibusdam iusto nesciunt magni! Reiciendis totam officiis, voluptates quia eum id numquam laboriosam!</p>
+            <ul>
+                <li>This is First Rule!</li>
+                <li>This is Second Rule!</li>
+                <li>This is Third Rule!</li>
+                <li>This is Fourth Rule!</li>
+                <li>This is Fifth Rule!</li>
+                <li>This is Sixth Rule!</li>
+                <li>This is Seventh Rule!</li>
+            </ul>
+        </fieldset>
+        <br><br>
+        <p></p>
+        <p class="thank">Thank You!</p>
+        <p></p>
+        <br><br>
+    </form>
+</body>
+</html>

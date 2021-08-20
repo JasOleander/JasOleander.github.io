@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Result</title>
+</head>
+<body>
+    <h3>Exam Result</h3>
+    <label for="subject1">Subject 1</label><br>
+    <input type="number" id="subject1"><br>
+    <label for="subject2">Subject 2</label><br>
+    <input type="number" id="subject2"><br>
+    <label for="subject3">Subject 3</label><br>
+    <input type="number" id="subject3"><br>
+    <button id="calculate">Calculate</button><br>
+    <label for="total">Total</label><br>
+    <input type="number" id="total" readonly='readonly'><br>
+    <label id="result">Result</label><br>
+    <script>
+        let btnCalculate = document.getElementById('calculate');
+        btnCalculate.onclick = show;
+            function show(){
+                // 1. input
+                let subject1=parseInt(document.getElementById('subject1').value);
+                let subject2=parseInt(document.getElementById('subject2').value);
+                let subject3=parseInt(document.getElementById('subject3').value);
+           //     console.log(subject1,subject2,subject3);
+               // 2. calculate
+               let total=subject1+subject2+subject3;
+               let result;
+               document.getElementById('total').value=total;
+                    if(subject1>=40 && subject2>=40 && subject3>=40){
+                        result='Passed!';
+                        // check for >= 80 subjects
+                        if (subject1>=80 || subject2>=80 || subject3>=80){
+                            result='Passed with Distinction!';
+                        }
+                    }else{
+                        result='Failed!';
+                    }
+                    document.getElementById('result').innerHTML = result;
+        // 3. result
+            }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Operations</title>
+</head>
+<body>
+        <h3>JS Operations</h3>
+        <script>
+        // 1. get user inputs
+        // assign two numbers to firstNumber and secondNumber
+        let firstNumber=parseFloat(prompt('Enter first Number!'));
+        let secondNumber=parseInt(prompt('Enter second Number!'));
+            console.log(firstNumber, secondNumber,typeof(firstNumber));
+        // 2. calculate
+        let sum = firstNumber + secondNumber;
+        let sub = firstNumber - secondNumber;
+        let mul = firstNumber * secondNumber;
+        let div = (firstNumber / secondNumber).toFixed(2);
+        let mod = firstNumber % secondNumber;
+        let power = firstNumber ** secondNumber;            
+        // 3. show result
+        console.log(` Sum : ${sum} \n Sub : ${sub} \n Mul : ${mul} \n Div : ${div} \n Mod : ${mod}`);
+
+        </script>
+</body>
+</html>
